@@ -3,7 +3,7 @@ import React from 'react'
 const NoFound = () => {
   return (
     <div className='mt-10 w-full min-h-[60vh] flex justify-center items-center'>
-      <img className='w-[700px] object-cover object-center' src="../../public/404not found.jpg" alt="" />
+      <img className='w-175 object-cover object-center' src="../../public/404not found.jpg" alt="" />
     </div>
   )
 }

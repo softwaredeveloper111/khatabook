@@ -1,8 +1,11 @@
 import React from "react";
 import Footer from "../components/Footer";
 import { useForm } from "react-hook-form";
+import axios from "axios";
+  import { ToastContainer, toast } from 'react-toastify';
 
 const CreateHisaab = () => {
+
 
   const {
     register,
@@ -10,18 +13,36 @@ const CreateHisaab = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
+  
 
+  function createTodayDate() {
+  const today = new Date();
 
+  const day = String(today.getDate()).padStart(2, "0");
+  const month = String(today.getMonth() + 1).padStart(2, "0");
+  const year = today.getFullYear();
 
-  function SubmitEventHandler(data){
-    console.log(data)
+  return `${day}-${month}-${year}`;
+}
+  
+
+  const notify = () => toast("task created sucessfully✅");
+  
+
+ async function SubmitEventHandler(data){
+    
+    const result =  await axios.post("http://localhost:3000/api/v1/tasks",{...data,date:createTodayDate()})
+    console.log(result)
+    notify()
     reset()
+    
   }
 
 
   return (
     <>
       <div className="create-new-hisaab px-20 py-6">
+        <ToastContainer/>
         <h4 className="text-sky-600 text-bold text-lg font-semibold">
           Create New Hisaab.
         </h4>
