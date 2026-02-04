@@ -34,13 +34,13 @@ const ShowHisaab = () => {
 
       <div className=' px-20 py-4'>
        <h4 className="text-sky-600 text-bold text-lg font-semibold">
-           hisaab of <span className='text-orange-400 font-bold'>{task.date}</span> : {task.title}
+           hisaab of <span className='text-orange-400 text-[15px]'>{task.date}</span> : {task.title}
         </h4>
 
-        <div className='w-110  max-h-120 p-5 bg-zinc-300 overflow-y-auto mt-6 rounded-md'>
-           <pre className='w-full h-full whitespace-normal'>
+        <div className='w-110  max-h-120 p-5 bg-zinc-300 dark:bg-zinc-600 overflow-y-auto mt-6 rounded-md'>
+           <p className='w-full h-full whitespace-pre-line'>
               {task.description}
-           </pre>
+           </p>
         </div>
     </div>
 

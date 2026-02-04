@@ -68,7 +68,7 @@ const EditHisaab = () => {
        <div className="edit-page px-20 py-5 ">
         <h4 className="text-sky-600 text-bold text-lg font-semibold">
           You are editing hisaab of
-          <span className="text-orange-400 font-bold">{task.date}</span> date.
+          <span className="text-orange-400 text-[15px]">  {task.date} </span> date.
         </h4>
 
         <form
@@ -91,7 +91,7 @@ const EditHisaab = () => {
              
               aria-invalid={!!errors.title}
               aria-describedby="title-errorr"
-              className="bg-zinc-300 border-none outline-none rounded-md px-3 py-3 w-95"
+              className="bg-zinc-300 dark:bg-zinc-600 border-none outline-none rounded-md px-3 py-3 w-95"
               type="text"
               placeholder="Shopping Hisaab, Ghar Ka Kharcha..."
             />
@@ -118,7 +118,7 @@ const EditHisaab = () => {
              
               aria-invalid={!!errors.description}
               aria-describedby="description-errorr"
-              className="bg-zinc-300 broder-none outline-none rounded-md p-3 resize-none w-115"
+              className="bg-zinc-300 dark:bg-zinc-600 broder-none outline-none rounded-md p-3 resize-none w-115"
               cols="30"
               rows="10"
               placeholder="Daal,Atta,cheeni"

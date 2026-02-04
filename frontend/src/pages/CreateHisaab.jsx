@@ -33,8 +33,7 @@ const CreateHisaab = () => {
 
  async function SubmitEventHandler(data){
     
-    const result =  await axios.post("http://localhost:3000/api/v1/tasks",{...data,date:createTodayDate()})
-    console.log(result)
+    await axios.post("http://localhost:3000/api/v1/tasks",{...data,date:createTodayDate()})
     notify()
     reset()
     
@@ -60,7 +59,7 @@ const CreateHisaab = () => {
             })}
             aria-invalid={!!errors.title}
             aria-describedby="title-errorr"
-            className="bg-zinc-300 border-none outline-none rounded-md px-3 py-3 w-95"
+            className="bg-zinc-300 border-none outline-none rounded-md px-3 py-3 w-95 dark:bg-zinc-600"
             type="text"
             placeholder="Shopping Hisaab, Ghar Ka Kharcha..."
           />
@@ -77,7 +76,7 @@ const CreateHisaab = () => {
             })}
             aria-invalid={!!errors.description}
             aria-describedby="description-errorr"
-            className="bg-zinc-300 broder-none outline-none rounded-md p-3 resize-none w-115"
+            className="bg-zinc-300 broder-none outline-none rounded-md p-3 resize-none w-115 dark:bg-zinc-600"
             cols="30"
             rows="10"
             placeholder="Daal,Atta,cheeni"
