@@ -26,7 +26,9 @@ const CreateHisaab = () => {
 }
   
 
-  const notify = () => toast("task created sucessfully✅");
+  const notify = () => toast("task created sucessfully✅", {
+    className: "custom-create-toast",
+  });
   
 
  async function SubmitEventHandler(data){

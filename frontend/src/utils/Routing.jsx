@@ -12,8 +12,8 @@ const Routing = () => {
     <Routes>
       <Route path='/' Component={Home}/> 
       <Route path='/create-new-hissab' Component={CreateHisaab}/> 
-      <Route path='/show-hisaab' Component={ShowHisaab}/> 
-      <Route path='/update-hisaab' Component={EditHisaab}/> 
+      <Route path='/show-hisaab/:id' Component={ShowHisaab}/> 
+      <Route path='/update-hisaab/:id' Component={EditHisaab}/> 
       <Route path='*' Component={NoFound}/> 
 
     </Routes>

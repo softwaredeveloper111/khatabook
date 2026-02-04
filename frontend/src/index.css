@@ -19,3 +19,21 @@ button{
 button:active{
   scale: .6;
 }
+
+
+.custom-update-toast {
+  background-color: rgb(24, 131, 180); 
+  color: white;
+  font-weight: 500;
+}
+.custom-create-toast {
+  background-color: greenyellow; 
+  color: white;
+  font-weight: 500;
+}
+
+.custom-delete-toast{
+   background-color: rgb(131, 28, 28);
+  color: white;
+  font-weight: 500;
+}
