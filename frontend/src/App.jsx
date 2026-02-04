@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import Nav from "./components/Nav";
+import Routing from "./utils/Routing";
+
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <div className="app min-h-full w-full relative">
+      <Nav />
 
-export default App
+      <Routing />
+    </div>
+  );
+};
+
+export default App;
