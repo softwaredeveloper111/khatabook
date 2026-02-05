@@ -32,12 +32,12 @@ const ShowHisaab = () => {
 
     {task ? (
 
-      <div className=' px-20 py-4'>
-       <h4 className="text-sky-600 text-bold text-lg font-semibold">
-           hisaab of <span className='text-orange-400 text-[15px]'>{task.date}</span> : {task.title}
+      <div className=' px-8 sm:px-10 lg:px-20  py-4'>
+       <h4 className="text-sky-600 text-bold  font-semibold text-sm sm:text-lg">
+           hisaab of <span className='text-orange-400 text-sm sm:text-[15px]'>  {task.date}</span> : {task.title}
         </h4>
 
-        <div className='w-110  max-h-120 p-5 bg-zinc-300 dark:bg-zinc-600 overflow-y-auto mt-6 rounded-md'>
+        <div className=' w-80  sm:w-115  max-h-120 p-5 bg-zinc-300 dark:bg-zinc-600 overflow-y-auto mt-6 rounded-md'>
            <p className='w-full h-full whitespace-pre-line'>
               {task.description}
            </p>

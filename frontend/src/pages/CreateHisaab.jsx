@@ -42,7 +42,7 @@ const CreateHisaab = () => {
 
   return (
     <>
-      <div className="create-new-hisaab px-20 py-6">
+      <div className="create-new-hisaab  py-6 px-8 sm:px-10 lg:px-20">
         <ToastContainer/>
         <h4 className="text-sky-600 text-bold text-lg font-semibold">
           Create New Hisaab.
@@ -59,7 +59,7 @@ const CreateHisaab = () => {
             })}
             aria-invalid={!!errors.title}
             aria-describedby="title-errorr"
-            className="bg-zinc-300 border-none outline-none rounded-md px-3 py-3 w-95 dark:bg-zinc-600"
+            className="bg-zinc-300 text-sm sm:text-base border-none outline-none rounded-md px-3 py-3  w-70 sm:w-95 dark:bg-zinc-600"
             type="text"
             placeholder="Shopping Hisaab, Ghar Ka Kharcha..."
           />
@@ -76,7 +76,7 @@ const CreateHisaab = () => {
             })}
             aria-invalid={!!errors.description}
             aria-describedby="description-errorr"
-            className="bg-zinc-300 broder-none outline-none rounded-md p-3 resize-none w-115 dark:bg-zinc-600"
+            className="bg-zinc-300 text-sm sm:text-base broder-none outline-none rounded-md p-3 resize-none w-80  sm:w-115 dark:bg-zinc-600"
             cols="30"
             rows="10"
             placeholder="Daal,Atta,cheeni"

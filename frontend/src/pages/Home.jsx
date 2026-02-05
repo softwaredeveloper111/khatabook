@@ -21,7 +21,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="home px-20 mt-10 min-h-[73vh] relative mb-10">
+      <div className="home px-8 sm:px-10 lg:px-20 mt-10 min-h-[62vh] relative mb-10  lg:min-h-[73vh]">
         <ToastContainer/>
         <h4 className="text-sky-600 text-bold text-lg font-semibold">
           All Hisaab kitaab.
