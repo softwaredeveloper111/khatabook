@@ -1,6 +1,7 @@
 const express = require("express");
 const taskModel = require("./model/tasks.model")
 const cors = require("cors")
+const path = require("path")
 const app = express();
 
 
@@ -106,6 +107,14 @@ app.post("/api/v1/tasks",async(req,res)=>{
  })
 
 
+
+ /**
+  * wild cart route
+  */
+
+ app.use("*name",(req,res)=>{
+   res.sendFile(path.join(__dirname,"..","/public/index.html"))
+ })
 
 
 
