@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -10,9 +11,9 @@ const Footer = () => {
 
        <span className='text-sm sm:text-base'>©2026-2026 Powerd by <span className='text-blue-700 cursor-pointer'>Kirana Dukaan</span></span>
        <span className='flex items-center gap-5'>
-        <i class="ri-instagram-line  cursor-pointer text-base sm:text-xl"></i>
-        <i class="ri-linkedin-fill  cursor-pointer text-base sm:text-xl"></i>
-        <i class="ri-github-fill  cursor-pointer text-base sm:text-xl"></i>
+        <Link target='_blank' to="https://www.instagram.com/sourav___giri/"><i class="ri-instagram-line  cursor-pointer text-base sm:text-xl"></i></Link>
+        <Link target='_blank' to="https://www.linkedin.com/in/sourav-giri-0a148820a/"> <i class="ri-linkedin-fill  cursor-pointer text-base sm:text-xl"></i></Link> 
+       <Link target='_blank' to="https://github.com/softwaredeveloper111"> <i class="ri-github-fill  cursor-pointer text-base sm:text-xl"></i></Link>
        </span>
     </div>
   )
