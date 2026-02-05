@@ -30,7 +30,7 @@ const EditHisaab = () => {
 
     const fetchTask = async ()=>{
         if(id){
-          const t =  await axios.get(`http://localhost:3000/api/v1/tasks/${id}`)
+          const t =  await axios.get(`https://khatabook-g6vm.onrender.com/api/v1/tasks/${id}`)
           setTask(t.data.task)
         }
     }
@@ -54,7 +54,7 @@ const EditHisaab = () => {
    try {
 
       // console.log(data);
-    await axios.patch(`http://localhost:3000/api/v1/tasks/${id}`,data)
+    await axios.patch(`https://khatabook-g6vm.onrender.com/api/v1/tasks/${id}`,data)
     notify()
     navigate("/")
     

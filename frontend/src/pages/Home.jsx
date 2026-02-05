@@ -11,7 +11,7 @@ const Home = () => {
   
   useEffect(()=>{
      async function fetchData(){
-         const {data} = await axios.get("http://localhost:3000/api/v1/tasks")
+         const {data} = await axios.get("https://khatabook-g6vm.onrender.com/api/v1/tasks")
         //  console.log(data.tasks)
         setTaskLists(data.tasks)
       }

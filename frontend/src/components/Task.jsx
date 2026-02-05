@@ -17,7 +17,7 @@ const Task = ({ item, setTaskLists }) => {
     });
 
   async function deleteEventHandler(id) {
-    await axios.delete(`http://localhost:3000/api/v1/tasks/${id}`);
+    await axios.delete(`https://khatabook-g6vm.onrender.com/api/v1/tasks/${id}`);
     setTaskLists((prev) => prev.filter((item) => item._id !== id));
     notify();
   }

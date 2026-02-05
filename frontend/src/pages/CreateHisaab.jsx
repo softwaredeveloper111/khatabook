@@ -33,7 +33,7 @@ const CreateHisaab = () => {
 
  async function SubmitEventHandler(data){
     
-    await axios.post("http://localhost:3000/api/v1/tasks",{...data,date:createTodayDate()})
+    await axios.post("https://khatabook-g6vm.onrender.com/api/v1/tasks",{...data,date:createTodayDate()})
     notify()
     reset()
     
